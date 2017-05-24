@@ -1,23 +1,28 @@
 .top-bar{
   background-color: $nav-background;
-
   ul{
     background-color: $nav-background;
   }
-
   .menu-text{
     color: $nav-text-color;
   }
-
   .top-bar-right{
     .menu > li > a {
       padding: 0;
       display: inline;
     }
   }
-}
+  .app-menu-item{
+      .active-link{
+        font-weight: 900;
+        text-decoration: none !important;
+        &:hover{
+          color: #1779ba !important;
+        }
+      }
 
-.active-link{
-  font-weight: 900 !important;
-  color: green !important;
+      :not(.active-link):hover{
+        color: darken(white, 50)!important;
+      }
+  }
 }
