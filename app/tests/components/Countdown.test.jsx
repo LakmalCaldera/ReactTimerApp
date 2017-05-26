@@ -11,7 +11,7 @@ describe('Countdown', ()=>{
     expect(Countdown).toExist();
   });
 
-  /*describe('handleSetCountdown', () => {
+  describe('handleSetCountdown', () => {
     it('should set state to started and countdown', (done) => {
       var countdown = TestUtils.renderIntoDocument(<Countdown/>);
       countdown.handleSetCountdown(10);
@@ -35,12 +35,11 @@ describe('Countdown', ()=>{
 
       setTimeout(() => {
         expect(countdown.state.count).toBe(0);
-        expect(countdown.state.countdownStatus).toBe('started');
         done();
       }, 4001);
     });
 
-  });*/
+  });
 
   it('should pause countdown on paused status', (done) => {
     var countdown = TestUtils.renderIntoDocument(<Countdown/>);
