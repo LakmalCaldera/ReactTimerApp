@@ -1,6 +1,5 @@
 var webpack = require('webpack');
 
-
 module.exports = {
   entry: [
     'script!jquery/dist/jquery.min.js',
@@ -32,7 +31,8 @@ module.exports = {
       Countdown: 'app/components/Countdown.jsx',
       Timer: 'app/components/Timer.jsx',
       Clock: 'app/components/Clock.jsx',
-      CountdownForm: 'app/components/CountdownForm.jsx'
+      CountdownForm: 'app/components/CountdownForm.jsx',
+      Controls: 'app/components/Controls.jsx'
     }
   },
   module: {
